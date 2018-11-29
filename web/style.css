@@ -23,6 +23,7 @@ body {
  table {
 	margin: 0 auto;
 	width: 100%;
+
  }
 
  p {
@@ -65,7 +66,7 @@ body {
  }
 
 footer {
-	background-color: #000000;
+	background-color: black;
 	background-size: 100%;
  }
 
