@@ -1,0 +1,57 @@
+
+body {
+	text-align: center;
+	margin: 0 auto;
+	background-image: url(https://github.com/Core2931/Project-PSIT-CO2/blob/Mark/Web/banner.jpg?raw=true);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.box {
+	background-color: #ffffff;
+	text-align: center;
+	border-radius: 0.5em;
+	box-shadow: 7px 9px 23px 3px rgba(0,0,0,0.63);	
+	margin: 0 auto;
+}
+
+.iconbar1{
+	margin: 20px 20px;
+	font-size: 30px;
+}
+
+.iconbar2{
+	margin: 20px 20px;
+	font-size: 30px;
+}
+
+.iconbar3{
+	margin: 20px 20px;
+	font-size: 30px;
+}
+.bar1{
+	margin: 15px 390px;
+	font-size: 30px;
+	border: 2px solid;
+	padding: 20px;
+	background-color: #0066CC;
+	border-color: white;
+	border-left-width: 15px ;
+	border-right-width: 15px ;
+	border-radius: 0.5em;
+
+}
+.graph1{
+	background-attachment : fixed
+	background-repeat: no-repeat;
+	font-size: 20px;
+	color: red;
+
+}
+.para1{
+	font-size: 20px;
+}
+
+.imagebottom{
+
+	}
