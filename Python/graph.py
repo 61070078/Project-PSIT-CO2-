@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import csv
 import numpy as np
+import os
+
 year_data4_test = 1993
 sumvars = 0
 row_list = []
@@ -73,14 +75,11 @@ def all_graph():
     fig = plt.figure()
     fig.add_subplot(221)
     plt.plot(years_data1, vars_data1)
-    #plt.plot([2019, 2020],[420, 430], linestyle="--")
-    #plt.xlabel("YEAR")
     plt.ylabel("CO2 (parts per million)")
     plt.title("Carbon")
     fig.add_subplot(222)
     plt.plot(years_data2, vars_data2)
     plt.title("Global Temperature")
-    #plt.xlabel("YEAR")
     plt.ylabel("Temperature Anomaly (C)")
     fig.add_subplot(223)
     plt.plot(years_data3, vars_data3)
@@ -94,7 +93,72 @@ def all_graph():
     plt.ylabel("Sea Height (mm)")
     plt.show()
 
-def main():
+def graph_1():
+    plt.plot(years_data1, vars_data1)
+    plt.xlabel("YEAR")
+    plt.ylabel("CO2 (parts per million)")
+    plt.title("Carbon")
+    plt.show()
+
+def graph_2():
+    plt.plot(years_data2, vars_data2)
+    plt.title("Global Temperature")
+    plt.xlabel("YEAR")
+    plt.ylabel("Temperature Anomaly (C)")
+    plt.show()
+
+def graph_3():
+    plt.plot(years_data3, vars_data3)
+    plt.title("Arctic Sea Ice")
+    plt.xlabel("YEAR")
+    plt.ylabel("Square KM")
+    plt.show()
+
+def graph_4():
+    plt.plot(years_data4, vars_data4)
+    plt.title("Sea Level")
+    plt.xlabel("YEAR")
+    plt.ylabel("Sea Height (mm)")
+    plt.show()
+
+def function_1():
     cal2semple()
-    all_graph()
-main()
+    cls()
+    print("Carbon(1), Temperature(2), Arctic(3), Sea(4), All Graph(5), Back(0)")
+    select = int(input("Select : "))
+    if select == 1:
+        graph_1()
+    elif select == 2:
+        graph_2()
+    elif select == 3:
+        graph_3()
+    elif select == 4:
+        graph_4()
+    elif select == 5:
+        all_graph()
+    else:
+        print("Out of range")
+
+def cls():
+    """ clear moniter in terminal """
+    os.system("cls")
+    os.system("clear") # clear the moniter function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
