@@ -93,29 +93,29 @@ def all_graph():
     plt.ylabel("Sea Height (mm)")
     plt.show()
 
-def graph_1():
-    plt.plot(years_data1, vars_data1)
+def graph_1(years, values):
+    plt.plot(years, values)
     plt.xlabel("YEAR")
     plt.ylabel("CO2 (parts per million)")
     plt.title("Carbon")
     plt.show()
 
-def graph_2():
-    plt.plot(years_data2, vars_data2)
+def graph_2(years, values):
+    plt.plot(years, values)
     plt.title("Global Temperature")
     plt.xlabel("YEAR")
     plt.ylabel("Temperature Anomaly (C)")
     plt.show()
 
-def graph_3():
-    plt.plot(years_data3, vars_data3)
+def graph_3(years, values):
+    plt.plot(years, values)
     plt.title("Arctic Sea Ice")
     plt.xlabel("YEAR")
     plt.ylabel("Square KM")
     plt.show()
 
-def graph_4():
-    plt.plot(years_data4, vars_data4)
+def graph_4(years, values):
+    plt.plot(years, values)
     plt.title("Sea Level")
     plt.xlabel("YEAR")
     plt.ylabel("Sea Height (mm)")
@@ -127,13 +127,13 @@ def function_1():
     print("Carbon(1), Temperature(2), Arctic(3), Sea(4), All Graph(5), Back(0)")
     select = int(input("Select : "))
     if select == 1:
-        graph_1()
+        graph_1(years_data1, vars_data1)
     elif select == 2:
-        graph_2()
+        graph_2(years_data2, vars_data2)
     elif select == 3:
-        graph_3()
+        graph_3(years_data3, vars_data3)
     elif select == 4:
-        graph_4()
+        graph_4(years_data4, vars_data4)
     elif select == 5:
         all_graph()
     else:
