@@ -1,5 +1,5 @@
-year = [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2009]
-num = [59, 69, 62, 71, 79, 75, 88, 82, 90]
+year = [1955, 1956, 1957, 1958, 1959]
+num = [450, 495, 518, 563, 584]
 sum_num = sum(num)
 sum_year = sum(year)
 sum_year_2 = 0
@@ -7,16 +7,16 @@ sum_num_year = 0
 for i in year:
     sum_year_2 += i**2
 for i in range(len(year)):
+    num1 = year[i]
     num2 = num[i]
-    num3 = i*num2
+    num3 = num1*num2
     print(i)
     sum_num_year += num3
 print(sum_year, sum_num, sum_year_2, sum_num_year)
 
 b = ((len(year)*sum_num_year)-(sum_year*sum_num))/\
 ((len(year)*sum_year_2)-(sum_year**2))
-print(b)
-
+print(len(year))
 a = ((sum_num)-(b*sum_year))/(len(year))
 print(a)
 print("y = %.2f + %.2f(n)" %(a, b))

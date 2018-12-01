@@ -92,8 +92,8 @@ def cal_main(year, value):
     print("%.2f" %(z))
 
 def main_function():
-    print(years_data1, vars_data1)
     cal2semple()
+    print(years_data1, vars_data1)
     # print(vars_data4, vars_data3, vars_data2, vars_data1)
     cal_main(years_data1, vars_data1)
 main_function()
