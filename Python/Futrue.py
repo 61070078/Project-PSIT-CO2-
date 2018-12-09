@@ -71,29 +71,78 @@ def cal2semple():
     for i in range(1993, 2019):
         years_data4.append(i)
 
-def cal_main(year, value):
-    future = int(input())
+def cal_main(year, value, future):
+    value_of_number = len(year)
     sum_value = sum(value)
-    sum_year = sum(year)
+    sum_year = 0
     sum_year_2 = 0
     sum_num_year = 0
-    for i in year:
+    num_count = 1
+    for i in range(1, len(year)+1):
+        sum_year += i
+    for i in range(1, len(year)+1):
         sum_year_2 += i**2
     for i in range(len(year)):
-        sum_num_year += (year[i]*value[i])
+        sum_num_year += num_count * value[i]
+        num_count += 1
     b = ((len(year)*sum_num_year)-(sum_year*sum_value))/\
-    ((len(year)*sum_year_2)-(sum_year**2))
+        ((len(year)*sum_year_2)-(sum_year**2))
     a = ((sum_value)-(b*sum_year))/(len(year))
-    print(sum_value, sum_year, sum_num_year, sum_year_2)
-    print(a)
-    print(b)
-    print("y = %.2f + %.2f(n)" %(a, b))
-    z = a + (b*future)
-    print("%.2f" %(z))
+    c = (future - year[0])+1
+    z = a + (b*c)
+    return z
 
-def main_function():
+def cls():
+    """ clear moniter in terminal """
+    os.system("cls")
+    os.system("clear") # clear the moniter function
+
+def newdata_1(future_input):
+    futrue_new_value = cal_main(years_data1, vars_data1, future_input)
+    print(futrue_new_value, end=" ")
+
+def newdata_2(future_input):
+    futrue_new_value = cal_main(years_data2, vars_data2, future_input)
+    print(futrue_new_value, end=" ")
+
+def newdata_3(future_input):
+    futrue_new_value = cal_main(years_data3, vars_data3, future_input)
+    print(futrue_new_value, end=" ")
+
+def newdata_4(future_input):
+    futrue_new_value = cal_main(years_data4, vars_data4, future_input)
+    print(futrue_new_value, end=" ")
+
+def futrue_function():
     cal2semple()
-    print(years_data1, vars_data1)
-    # print(vars_data4, vars_data3, vars_data2, vars_data1)
-    cal_main(years_data1, vars_data1)
-main_function()
+    print("Carbon(1), Temperature(2), Arctic(3), Sea(4), Back(0)")
+    select = int(input("Select Data: "))
+    cls()
+    if select == 1:
+        future_input = int(input("Yesr: "))
+        print("Value in the future: ", end="")
+        newdata_1(future_input)
+        print("parts per million")
+        input("Enter to Main Manu")
+    elif select == 2:
+        future_input = int(input("Yesr: "))
+        print("Value in the future: ", end="")
+        newdata_2(future_input)
+        print("Temperature Anomaly (C)")
+        input("Enter to Main Manu")
+    elif select == 3:
+        future_input = int(input("Yesr: "))
+        print("Value in the future: ", end="")
+        newdata_3(future_input)
+        print("Square KM")
+        input("Enter to Main Manu")
+    elif select == 4:
+        future_input = int(input("Yesr: "))
+        print("Value in the future: ", end="")
+        newdata_4(future_input)
+        print("Sea Height (mm)")
+        input("Enter to Main Manu")
+    elif select == 0:
+        pass
+    else:
+        print("Out of range")

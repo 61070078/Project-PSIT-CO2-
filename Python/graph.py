@@ -121,7 +121,7 @@ def graph_4(years, values):
     plt.ylabel("Sea Height (mm)")
     plt.show()
 
-def function_1():
+def graph_function():
     cal2semple()
     cls()
     print("Carbon(1), Temperature(2), Arctic(3), Sea(4), All Graph(5), Back(0)")
