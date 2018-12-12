@@ -16,6 +16,7 @@ years_data3 = []
 vars_data3 = []
 years_data4 = []
 vars_data4 = []
+new_vars_data4 = []
 
 with open('../Data/carbon.txt') as csvfile:
     readfile = csv.reader(csvfile, delimiter=',')
@@ -70,6 +71,14 @@ def cal2semple():
         vars_data4.append((int((num_a/num_b)*100))/100)
     for i in range(1993, 2019):
         years_data4.append(i)
+cal2semple()
+
+def data4_change():
+    first_data4 = vars_data4[0]
+    for i in vars_data4:
+        value = i - (first_data4)
+        new_vars_data4.append((int(value*100))/100)
+data4_change()
 
 def cal_main(year, value, future):
     value_of_number = len(year)
@@ -110,11 +119,10 @@ def newdata_3(future_input):
     print(futrue_new_value, end=" ")
 
 def newdata_4(future_input):
-    futrue_new_value = cal_main(years_data4, vars_data4, future_input)
+    futrue_new_value = cal_main(years_data4, new_vars_data4, future_input)
     print(futrue_new_value, end=" ")
 
 def futrue_function():
-    cal2semple()
     print("Carbon(1), Temperature(2), Arctic(3), Sea(4), Back(0)")
     select = int(input("Select Data: "))
     cls()
