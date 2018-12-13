@@ -96,7 +96,7 @@ def all_graph():
     plt.xlabel("YEAR")
     plt.ylabel("Square KM")
     fig.add_subplot(224)
-    plt.plot(years_data4, vars_data4)
+    plt.plot(years_data4, new_vars_data4)
     plt.title("Sea Level")
     plt.xlabel("YEAR")
     plt.ylabel("Sea Height (mm)")
