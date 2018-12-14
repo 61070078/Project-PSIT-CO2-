@@ -12,6 +12,7 @@ years_data1 = []
 vars_data1 = []
 years_data2 = []
 vars_data2 = []
+new_vars_data2 = []
 years_data3 = []
 vars_data3 = []
 years_data4 = []
@@ -80,6 +81,13 @@ def data4_change():
         new_vars_data4.append((int(value*100))/100)
 data4_change()
 
+def data2_change():
+    first_data2 = vars_data2[0]
+    for i in vars_data2:
+        value = i - (first_data2)
+        new_vars_data2.append((int(value*100))/100)
+data2_change()
+
 def cal_main(year, value, future):
     value_of_number = len(year)
     sum_value = sum(value)
@@ -111,7 +119,7 @@ def newdata_1(future_input):
     print(futrue_new_value, end=" ")
 
 def newdata_2(future_input):
-    futrue_new_value = cal_main(years_data2, vars_data2, future_input)
+    futrue_new_value = cal_main(years_data2, new_vars_data2, future_input)
     print(futrue_new_value, end=" ")
 
 def newdata_3(future_input):
