@@ -6,7 +6,7 @@ import os
 def main_function():
     cls()
     while True:
-        print("First Function(1), Futrue(2) Exit(0)")
+        print("Graph(1), Futrue(2) Exit(0)")
         select_function = int(input("Select : "))
         if select_function == 0:
             break
