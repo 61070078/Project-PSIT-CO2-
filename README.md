@@ -17,6 +17,7 @@
 	Global Temperature มีข้อมูลตั้งแต่ 1880 - 2017
 	Arctic Sea Ice มีข้อมูลตั้งแต่ 1979 - 2017
 	Sea Level มีข้อมูลตั้งแต่ 1993 - 2018
+ตานเว็บไซต์นี้ https://climate.nasa.gov/vital-signs/carbon-dioxide/
 
 Modules ที่ใช้
 	- CSV
