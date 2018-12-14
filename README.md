@@ -31,4 +31,4 @@ Modules ที่ใช้
 	ตานเว็บไซต์นี้ https://web.ku.ac.th/schoolnet/snet2/knowledge_math/relation/relate3b.htm
 
 ผลลัพธ์
-	ผลลัพธ์งานวิเคราะได้ถูกแสดงไว้บนเว็บไซต์ของเรา 
+	ผลลัพธ์งานวิเคราะได้ถูกแสดงไว้บนเว็บไซต์ของเรา http://www.it.kmitl.ac.th/~it61070078/Project/index.html
