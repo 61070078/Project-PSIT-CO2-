@@ -4,31 +4,31 @@
 
 เราวิจัยการวิเคราะห์การปริมาณการปล่อยก๊าซ Carbon Dioxide และ การส่งผลต่อสิ่งต่างๆ
 
-เราทำอะไร
+เราทำอะไร<br>
 เราได้นำเอาข้อมูลของ NASA มาวิเคราะห์ว่าก๊าซ Carbon Dioxide นั้นส่งผลต่อสิ่งต่างๆ อย่างไร และ สิ่งที่ได้รับผลกระทบนั้น จะเป็นอย่างไร
 
-เราได้นำข้อมูลมาจาก NASA ที่เข้าได้เก็บข้อมูลไว้อยู่แล้ว มีอยู่ 4 อย่าง คือ
-	- Carbon Dioxide
-	- Global Temperature
-	- Arctic Sea Ice
-	- Sea Level
-(ข้อมูลที่เราเอามาใช้วันที่ 13/11/61)
-	Carbon Dioxide มีข้อมูลตั้งแต่ 1958 - 2018
-	Global Temperature มีข้อมูลตั้งแต่ 1880 - 2017
-	Arctic Sea Ice มีข้อมูลตั้งแต่ 1979 - 2017
-	Sea Level มีข้อมูลตั้งแต่ 1993 - 2018
-ตานเว็บไซต์นี้ https://climate.nasa.gov/vital-signs/carbon-dioxide/
+เราได้นำข้อมูลมาจาก NASA ที่เข้าได้เก็บข้อมูลไว้อยู่แล้ว มีอยู่ 4 อย่าง คือ<br>&emsp;&emsp;&emsp;
+	- Carbon Dioxide<br>&emsp;&emsp;&emsp;
+	- Global Temperature<br>&emsp;&emsp;&emsp;
+	- Arctic Sea Ice<br>&emsp;&emsp;&emsp;
+	- Sea Level<br>
+(ข้อมูลที่เราเอามาใช้วันที่ 13/11/61)<br>&emsp;&emsp;&emsp;
+	Carbon Dioxide มีข้อมูลตั้งแต่ 1958 - 2018<br>&emsp;&emsp;&emsp;
+	Global Temperature มีข้อมูลตั้งแต่ 1880 - 2017<br>&emsp;&emsp;&emsp;
+	Arctic Sea Ice มีข้อมูลตั้งแต่ 1979 - 2017<br>&emsp;&emsp;&emsp;
+	Sea Level มีข้อมูลตั้งแต่ 1993 - 2018<br>
+ตานเว็บไซต์นี้ : https://climate.nasa.gov/vital-signs/carbon-dioxide/
 
-Modules ที่ใช้
-	- CSV
-	- OS
+Modules ที่ใช้<br>&emsp;&emsp;&emsp;
+	- CSV<br>&emsp;&emsp;&emsp;
+	- OS<br>&emsp;&emsp;&emsp;
 	- Matplotlib
 
 ตารางการทำงาน และ การดำเนินงาน
-	ตามเว็บไซต์นี้ https://trello.com/b/piGCpT1x
+	ตามเว็บไซต์นี้ : https://trello.com/b/piGCpT1x
 
 สมการที่ใช้ในการคาดเดาอนาคต
-	ตามเว็บไซต์นี้ https://web.ku.ac.th/schoolnet/snet2/knowledge_math/relation/relate3b.htm
+	ตามเว็บไซต์นี้ : https://web.ku.ac.th/schoolnet/snet2/knowledge_math/relation/relate3b.htm
 
 ผลลัพธ์
-	ผลลัพธ์งานวิเคราะห์ได้ถูกแสดงไว้บนเว็บไซต์ของเรา http://www.it.kmitl.ac.th/~it61070078/Project/index.html
+	ผลลัพธ์งานวิเคราะห์ได้ถูกแสดงไว้บนเว็บไซต์ของเรา : http://www.it.kmitl.ac.th/~it61070078/Project/index.html
