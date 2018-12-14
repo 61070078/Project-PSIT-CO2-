@@ -12,6 +12,7 @@ years_data1 = []
 vars_data1 = []
 years_data2 = []
 vars_data2 = []
+new_vars_data2 = []
 years_data3 = []
 vars_data3 = []
 years_data4 = []
@@ -80,6 +81,13 @@ def data4_change():
         new_vars_data4.append((int(value*100))/100)
 data4_change()
 
+def data2_change():
+    first_data2 = vars_data2[0]
+    for i in vars_data2:
+        value = i - (first_data2)
+        new_vars_data2.append((int(value*100))/100)
+data2_change()
+
 def all_graph():
     fig = plt.figure()
     fig.add_subplot(221)
@@ -87,7 +95,7 @@ def all_graph():
     plt.ylabel("CO2 (parts per million)")
     plt.title("Carbon")
     fig.add_subplot(222)
-    plt.plot(years_data2, vars_data2)
+    plt.plot(years_data2, new_vars_data2)
     plt.title("Global Temperature")
     plt.ylabel("Temperature Anomaly (C)")
     fig.add_subplot(223)
@@ -137,7 +145,7 @@ def graph_function():
     if select == 1:
         graph_1(years_data1, vars_data1)
     elif select == 2:
-        graph_2(years_data2, vars_data2)
+        graph_2(years_data2, new_vars_data2)
     elif select == 3:
         graph_3(years_data3, vars_data3)
     elif select == 4:
