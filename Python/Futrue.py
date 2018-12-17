@@ -132,33 +132,33 @@ def newdata_4(future_input):
 
 def futrue_function():
     print("Carbon(1), Temperature(2), Arctic(3), Sea(4), Back(0)")
-    select = int(input("Select Data: "))
+    select = input("Select Data: ")
     cls()
-    if select == 1:
+    if select == '1':
         future_input = int(input("Yesr: "))
         print("Value in the future: ", end="")
         newdata_1(future_input)
         print("parts per million")
         input("Enter to Main Manu")
-    elif select == 2:
+    elif select == '2':
         future_input = int(input("Yesr: "))
         print("Value in the future: ", end="")
         newdata_2(future_input)
         print("Temperature Anomaly (C)")
         input("Enter to Main Manu")
-    elif select == 3:
+    elif select == '3':
         future_input = int(input("Yesr: "))
         print("Value in the future: ", end="")
         newdata_3(future_input)
         print("Square KM")
         input("Enter to Main Manu")
-    elif select == 4:
+    elif select == '4':
         future_input = int(input("Yesr: "))
         print("Value in the future: ", end="")
         newdata_4(future_input)
         print("Sea Height (mm)")
         input("Enter to Main Manu")
-    elif select == 0:
+    elif select == '0':
         pass
     else:
         print("Out of range")

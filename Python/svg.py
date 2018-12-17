@@ -1,7 +1,7 @@
-import matplotlib.pyplot as plt
+""" Save graph to SVG function """
 import csv
-import numpy as np
 import os
+import pygal as py
 
 year_data4_test = 1993
 sumvars = 0
@@ -88,92 +88,41 @@ def data2_change():
         new_vars_data2.append((int(value*100))/100)
 data2_change()
 
-def all_graph():
-    fig = plt.figure()
-    fig.add_subplot(221)
-    plt.plot(years_data1, vars_data1)
-    plt.ylabel("CO2 (parts per million)")
-    plt.title("Carbon")
-    fig.add_subplot(222)
-    plt.plot(years_data2, new_vars_data2)
-    plt.title("Global Temperature")
-    plt.ylabel("Temperature Anomaly (C)")
-    fig.add_subplot(223)
-    plt.plot(years_data3, vars_data3)
-    plt.title("Arctic Sea Ice")
-    plt.xlabel("YEAR")
-    plt.ylabel("Square KM")
-    fig.add_subplot(224)
-    plt.plot(years_data4, new_vars_data4)
-    plt.title("Sea Level")
-    plt.xlabel("YEAR")
-    plt.ylabel("Sea Height (mm)")
-    plt.show()
+def svg_carbon():
+    line_chart = py.Line(x_label_rotation=90)
+    line_chart.title = 'Browser usage evolution (in %)'
+    line_chart.x_labels = map(str, range(1958, 2019))
+    line_chart.add('CARBON', vars_data1)
+    line_chart.render_to_file('../Web/SVG/carbom.svg')
+    return '[ (CARBON) Save successfully ]'
 
-def graph_1(years, values):
-    plt.plot(years, values)
-    plt.xlabel("YEAR")
-    plt.ylabel("CO2 (parts per million)")
-    plt.title("Carbon")
-    plt.show()
+def svg_tem():
+    line_chart = py.Line(x_label_rotation=90)
+    line_chart.title = 'Browser usage evolution (in %)'
+    line_chart.x_labels = map(str, range(1880, 2018))
+    line_chart.add('Temperature', new_vars_data2)
+    line_chart.render_to_file('../Web/SVG/tem.svg')
+    return '[ (Temperature) Save successfully ]'
 
-def graph_2(years, values):
-    plt.plot(years, values)
-    plt.title("Global Temperature")
-    plt.xlabel("YEAR")
-    plt.ylabel("Temperature Anomaly (C)")
-    plt.show()
+def svg_arc():
+    line_chart = py.Line(x_label_rotation=90)
+    line_chart.title = 'Browser usage evolution (in %)'
+    line_chart.x_labels = map(str, range(1979, 2018))
+    line_chart.add('Arctic', vars_data3)
+    line_chart.render_to_file('../Web/SVG/arc.svg')
+    return '[ (Arctic) Save successfully ]'
 
-def graph_3(years, values):
-    plt.plot(years, values)
-    plt.title("Arctic Sea Ice")
-    plt.xlabel("YEAR")
-    plt.ylabel("Square KM")
-    plt.show()
+def svg_sea():
+    line_chart = py.Line(x_label_rotation=90)
+    line_chart.title = 'Browser usage evolution (in %)'
+    line_chart.x_labels = map(str, range(1993, 2018))
+    line_chart.add('Sea', new_vars_data4)
+    line_chart.render_to_file('../Web/SVG/sea.svg')
+    return '[ (Sea) Save successfully ]'
 
-def graph_4(years, values):
-    plt.plot(years, values)
-    plt.title("Sea Level")
-    plt.xlabel("YEAR")
-    plt.ylabel("Sea Height (mm)")
-    plt.show()
-
-def graph_function():
-    cls()
-    print("Carbon(1), Temperature(2), Arctic(3), Sea(4), All Graph(5), Back(0)")
-    select = input("Select : ")
-    if select == '1':
-        graph_1(years_data1, vars_data1)
-    elif select == '2':
-        graph_2(years_data2, new_vars_data2)
-    elif select == '3':
-        graph_3(years_data3, vars_data3)
-    elif select == '4':
-        graph_4(years_data4, new_vars_data4)
-    elif select == '5':
-        all_graph()
-    else:
-        print("Out of range")
-        input("Enter to Main Manu")
-
-def cls():
-    """ clear moniter in terminal """
-    os.system("cls")
-    os.system("clear") # clear the moniter function
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def svg_main():
+    print(svg_carbon())
+    print(svg_tem())
+    print(svg_arc())
+    print(svg_sea())
+    input("Enter to Main Manu")
