@@ -90,7 +90,7 @@ data2_change()
 
 def svg_carbon():
     line_chart = py.Line(x_label_rotation=90)
-    line_chart.title = 'Browser usage evolution (in %)'
+    line_chart.title = 'CO2 (parts per million)'
     line_chart.x_labels = map(str, range(1958, 2019))
     line_chart.add('CARBON', vars_data1)
     line_chart.render_to_file('../Web/SVG/carbom.svg')
@@ -98,7 +98,7 @@ def svg_carbon():
 
 def svg_tem():
     line_chart = py.Line(x_label_rotation=90)
-    line_chart.title = 'Browser usage evolution (in %)'
+    line_chart.title = 'Temperature Anomaly (C)'
     line_chart.x_labels = map(str, range(1880, 2018))
     line_chart.add('Temperature', new_vars_data2)
     line_chart.render_to_file('../Web/SVG/tem.svg')
@@ -106,7 +106,7 @@ def svg_tem():
 
 def svg_arc():
     line_chart = py.Line(x_label_rotation=90)
-    line_chart.title = 'Browser usage evolution (in %)'
+    line_chart.title = 'Square KM'
     line_chart.x_labels = map(str, range(1979, 2018))
     line_chart.add('Arctic', vars_data3)
     line_chart.render_to_file('../Web/SVG/arc.svg')
@@ -114,7 +114,7 @@ def svg_arc():
 
 def svg_sea():
     line_chart = py.Line(x_label_rotation=90)
-    line_chart.title = 'Browser usage evolution (in %)'
+    line_chart.title = 'Sea Height (mm)'
     line_chart.x_labels = map(str, range(1993, 2018))
     line_chart.add('Sea', new_vars_data4)
     line_chart.render_to_file('../Web/SVG/sea.svg')
