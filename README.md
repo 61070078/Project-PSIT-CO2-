@@ -24,13 +24,13 @@ Modules ที่ใช้<br>&emsp;&emsp;&emsp;
 	- OS<br>&emsp;&emsp;&emsp;
 	- Matplotlib
 
-ตารางการทำงาน และ การดำเนินงาน
-	ตามเว็บไซต์นี้ : https://trello.com/b/piGCpT1x
+ตารางการทำงาน และ การดำเนินงาน<br>&emsp;&emsp;&emsp;
+	ตามเว็บไซต์นี้ : https://trello.com/b/piGCpT1x<br>
 
-สมการที่ใช้ในการคาดเดาอนาคต
-	ตามเว็บไซต์นี้ : https://web.ku.ac.th/schoolnet/snet2/knowledge_math/relation/relate3b.htm
+สมการที่ใช้ในการคาดเดาอนาคต<br>&emsp;&emsp;&emsp;
+	ตามเว็บไซต์นี้ : https://web.ku.ac.th/schoolnet/snet2/knowledge_math/relation/relate3b.htm<br>
 
-ผลลัพธ์
+ผลลัพธ์<br>&emsp;&emsp;&emsp;
 	ผลลัพธ์งานวิเคราะห์ได้ถูกแสดงไว้บนเว็บไซต์ของเรา : https://61070078.github.io/Project-PSIT-CO2/Web<br>
 จัดทำโดย<br>&emsp;&emsp;&emsp;
 	1. นาย ธนวัตน์ จันทร์หอม (61070078:A)<br>&emsp;&emsp;&emsp;
