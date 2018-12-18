@@ -2,10 +2,10 @@
 
 ---------------------------------
 
-เราวิจัยการวิเคราะห์การปริมาณการปล่อยก๊าซ Carbon Dioxide และ การส่งผลต่อสิ่งต่างๆ
+เราวิจัยการวิเคราะห์การปริมาณการปล่อยก๊าซ Carbon Dioxide และ การส่งผลต่อสิ่งต่างๆ<br>
 
-เราทำอะไร<br>
-เราได้นำเอาข้อมูลของ NASA มาวิเคราะห์ว่าก๊าซ Carbon Dioxide นั้นส่งผลต่อสิ่งต่างๆ อย่างไร และ สิ่งที่ได้รับผลกระทบนั้น จะเป็นอย่างไร
+เราทำอะไร<br>&emsp;&emsp;&emsp;
+	เราได้นำเอาข้อมูลของ NASA มาวิเคราะห์ว่าก๊าซ Carbon Dioxide นั้นส่งผลต่อสิ่งต่างๆ อย่างไร และ สิ่งที่ได้รับผลกระทบนั้น จะเป็นอย่างไร<br>
 
 เราได้นำข้อมูลมาจาก NASA ที่เข้าได้เก็บข้อมูลไว้อยู่แล้ว มีอยู่ 4 อย่าง คือ<br>&emsp;&emsp;&emsp;
 	- Carbon Dioxide<br>&emsp;&emsp;&emsp;
@@ -22,18 +22,19 @@
 Modules ที่ใช้<br>&emsp;&emsp;&emsp;
 	- CSV<br>&emsp;&emsp;&emsp;
 	- OS<br>&emsp;&emsp;&emsp;
-	- Matplotlib
+	- Matplotlib<br>&emsp;&emsp;&emsp;
+	- pygal<br>
 
-ตารางการทำงาน และ การดำเนินงาน
-	ตามเว็บไซต์นี้ : https://trello.com/b/piGCpT1x
+ตารางการทำงาน และ การดำเนินงาน<br>&emsp;&emsp;&emsp;
+	ตามเว็บไซต์นี้ : https://trello.com/b/piGCpT1x<br>
 
-สมการที่ใช้ในการคาดเดาอนาคต
-	ตามเว็บไซต์นี้ : https://web.ku.ac.th/schoolnet/snet2/knowledge_math/relation/relate3b.htm
+สมการที่ใช้ในการคาดเดาอนาคต<br>&emsp;&emsp;&emsp;
+	ตามเว็บไซต์นี้ : https://web.ku.ac.th/schoolnet/snet2/knowledge_math/relation/relate3b.htm<br>
 
-ผลลัพธ์
-	ผลลัพธ์งานวิเคราะห์ได้ถูกแสดงไว้บนเว็บไซต์ของเรา : http://www.it.kmitl.ac.th/~it61070078/Project/index.html
-จัดทำโดย
-	1. นาย ธนวัตน์ จันทร์หอม (61070078:A)
-	2. นาย พัชรพล บุญชุ่ม (61070136:B)
-	3. นาย สรวิศ ผาวิรัตน์ (61070223:C)
-	4. นาย ราเมธ จรเจริญ (61070188:D)
+ผลลัพธ์<br>&emsp;&emsp;&emsp;
+	ผลลัพธ์งานวิเคราะห์ได้ถูกแสดงไว้บนเว็บไซต์ของเรา : https://61070078.github.io/Project-PSIT-CO2/Web<br>
+จัดทำโดย<br>&emsp;&emsp;&emsp;
+	1. นาย ธนวัตน์ จันทร์หอม (61070078:A)<br>&emsp;&emsp;&emsp;
+	2. นาย พัชรพล บุญชุ่ม (61070136:B)<br>&emsp;&emsp;&emsp;
+	3. นาย สรวิศ ผาวิรัตน์ (61070223:C)<br>&emsp;&emsp;&emsp;
+	4. นาย ราเมธ จรเจริญ (61070188:D)<br>

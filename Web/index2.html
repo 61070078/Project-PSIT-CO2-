@@ -3,6 +3,11 @@
     <head>
         <title>AFTER</title>
         <link rel="stylesheet" type="text/css" href="CSS2/style_2.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+        .mySlides {display:none;}
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body class="back">
         <div class="box">
@@ -15,51 +20,34 @@
                 </thead>
             </table>
         </div>
-        <div class="container" style="margin-bottom: 20px;">
-    
-            <input type="radio" id="i1" name="images" checked />
-            <input type="radio" id="i2" name="images" />
-            <input type="radio" id="i3" name="images" />
-            <input type="radio" id="i4" name="images" />   
-            
-            <div class="slide_img" id="one">            
-                    
-                    <iframe src="SVG/carbom.svg"></iframe>
-                    
-                        <label class="prev" for="i5"><span>&#x2039;</span></label>
-                        <label class="next" for="i2"><span>&#x203a;</span></label>  
-                
-            </div>
-            
-            <div class="slide_img" id="two">
-                
-                    <iframe src="SVG/tem.svg"></iframe>
-                    
-                        <label class="prev" for="i1"><span>&#x2039;</span></label>
-                        <label class="next" for="i3"><span>&#x203a;</span></label>
-                
-            </div>
-                    
-            <div class="slide_img" id="three">
-                    <iframe src="SVG/arc.svg"></iframe>  
-                    
-                        <label class="prev" for="i2"><span>&#x2039;</span></label>
-                        <label class="next" for="i4"><span>&#x203a;</span></label>
-            </div>
+        <div class="w3-content w3-display-container" style="margin-bottom: 10px">
+          <iframe class="mySlides" src="SVG/carbom.svg" style="width:100%"></iframe>
+          <iframe class="mySlides" src="SVG/tem.svg" style="width:100%"></iframe>
+          <iframe class="mySlides" src="SVG/arc.svg" style="width:100%"></iframe>
+          <iframe class="mySlides" src="SVG/sea.svg" style="width:100%"></iframe>
 
-            <div class="slide_img" id="four">
-                    <iframe src="SVG/sea.svg"></iframe> 
-                    
-                        <label class="prev" for="i3"><span>&#x2039;</span></label>
-                        <label class="next" for="i5"><span>&#x203a;</span></label>
-            </div>
-            <div id="nav_slide">
-                <label for="i1" class="dots" id="dot1"></label>
-                <label for="i2" class="dots" id="dot2"></label>
-                <label for="i3" class="dots" id="dot3"></label>
-                <label for="i4" class="dots" id="dot4"></label>
-            </div>  
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
         </div>
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
         <div class="back2">
             <img src="">
             <h1> Carbon Dioxide(คาร์บอนไดออกไซด์) </h1>
