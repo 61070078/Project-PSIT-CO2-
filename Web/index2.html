@@ -2,20 +2,63 @@
 <html>
     <head>
         <title>AFTER</title>
-        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="CSS2/style_2.css">
     </head>
     <body class="back">
         <div class="box">
             <table>
                 <thead>
+                    <th><p><a href="index.html"> HOME </a></p></th>
                     <th><p><a href="index.html"> CARBON </a></p></th>
                     <th><p> AFFECT </p></th>
                     <th><p><a href="index3.html"> FUTRUE </a></p></th>
                 </thead>
             </table>
         </div>
-        <div style="margin: 50px;">
-            <img class="imgall", src="Graph_img/All.jpg">
+        <div class="container" style="margin-bottom: 20px;">
+    
+            <input type="radio" id="i1" name="images" checked />
+            <input type="radio" id="i2" name="images" />
+            <input type="radio" id="i3" name="images" />
+            <input type="radio" id="i4" name="images" />   
+            
+            <div class="slide_img" id="one">            
+                    
+                    <iframe src="SVG/carbom.svg"></iframe>
+                    
+                        <label class="prev" for="i5"><span>&#x2039;</span></label>
+                        <label class="next" for="i2"><span>&#x203a;</span></label>  
+                
+            </div>
+            
+            <div class="slide_img" id="two">
+                
+                    <iframe src="SVG/tem.svg"></iframe>
+                    
+                        <label class="prev" for="i1"><span>&#x2039;</span></label>
+                        <label class="next" for="i3"><span>&#x203a;</span></label>
+                
+            </div>
+                    
+            <div class="slide_img" id="three">
+                    <iframe src="SVG/arc.svg"></iframe>  
+                    
+                        <label class="prev" for="i2"><span>&#x2039;</span></label>
+                        <label class="next" for="i4"><span>&#x203a;</span></label>
+            </div>
+
+            <div class="slide_img" id="four">
+                    <iframe src="SVG/sea.svg"></iframe> 
+                    
+                        <label class="prev" for="i3"><span>&#x2039;</span></label>
+                        <label class="next" for="i5"><span>&#x203a;</span></label>
+            </div>
+            <div id="nav_slide">
+                <label for="i1" class="dots" id="dot1"></label>
+                <label for="i2" class="dots" id="dot2"></label>
+                <label for="i3" class="dots" id="dot3"></label>
+                <label for="i4" class="dots" id="dot4"></label>
+            </div>  
         </div>
         <div class="back2">
             <img src="">
