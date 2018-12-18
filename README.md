@@ -22,8 +22,8 @@
 Modules ที่ใช้<br>&emsp;&emsp;&emsp;
 	- CSV<br>&emsp;&emsp;&emsp;
 	- OS<br>&emsp;&emsp;&emsp;
-	- Matplotlib
-
+	- Matplotlib<br>&emsp;&emsp;&emsp;
+	- pygal<br>
 ตารางการทำงาน และ การดำเนินงาน<br>&emsp;&emsp;&emsp;
 	ตามเว็บไซต์นี้ : https://trello.com/b/piGCpT1x<br>
 
