@@ -85,6 +85,7 @@ a:hover {
 }
 
 iframe {
+	width: 800px
 	border-radius: 0.7em;
 }
 
