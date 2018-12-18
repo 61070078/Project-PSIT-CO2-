@@ -85,8 +85,6 @@ a:hover {
 }
 
 iframe {
-	width: 800px;
-	height: 800px;
 	border-radius: 0.7em;
 }
 
@@ -296,4 +294,8 @@ iframe {
 }
 @media screen  and(min-width: 970px){
 	.me{ display: none;}
+}
+
+embed {
+	border-radius: 0.7em;
 }
