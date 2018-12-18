@@ -32,7 +32,7 @@ Modules ที่ใช้<br>&emsp;&emsp;&emsp;
 
 ผลลัพธ์
 	ผลลัพธ์งานวิเคราะห์ได้ถูกแสดงไว้บนเว็บไซต์ของเรา : https://61070078.github.io/Project-PSIT-CO2/Web<br>
-จัดทำโดย<br>
+จัดทำโดย<br>&emsp;&emsp;&emsp;
 	1. นาย ธนวัตน์ จันทร์หอม (61070078:A)<br>&emsp;&emsp;&emsp;
 	2. นาย พัชรพล บุญชุ่ม (61070136:B)<br>&emsp;&emsp;&emsp;
 	3. นาย สรวิศ ผาวิรัตน์ (61070223:C)<br>&emsp;&emsp;&emsp;
